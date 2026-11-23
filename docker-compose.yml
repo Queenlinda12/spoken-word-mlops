@@ -1,0 +1,28 @@
+services:
+  api:                      # scale me:  docker compose up -d --scale api=3
+    build: .
+    environment:
+      - RETRAIN_THRESHOLD=30
+      - AUTO_RETRAIN=true
+    volumes:
+      - ./data:/app/data
+      - ./models:/app/models
+    expose: ["8000"]
+    restart: unless-stopped
+
+  lb:
+    image: nginx:1.27-alpine
+    volumes: ["./nginx.conf:/etc/nginx/nginx.conf:ro"]
+    ports: ["8000:80"]      # public API address
+    depends_on: [api]
+    restart: unless-stopped
+
+  ui:
+    build:
+      context: .
+      dockerfile: ui/Dockerfile
+    environment:
+      - API_URL=http://lb
+    ports: ["8501:8501"]
+    depends_on: [lb]
+    restart: unless-stopped

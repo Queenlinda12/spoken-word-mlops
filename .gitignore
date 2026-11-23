@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+data/app.db
+models/training_state.json
+models/*_prev.h5
+.env
+raw_recordings/
+new_recordings/
+*.zip
