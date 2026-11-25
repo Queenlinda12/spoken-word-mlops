@@ -42,6 +42,10 @@ pipeline can be retrained on another language (for example Kinyarwanda) by repla
 | 0.780 | 0.737 | 0.808 | 0.780 | 0.783 |
 
 Full tables (validation vs test, per-class report, confusion matrix, retraining before/after) are in the notebook.
+> **Note on the numbers:** neural-network training is random, so each run of the notebook gives slightly different results.
+> The numbers above are from the run whose model is deployed in the app (`models/`). The notebook outputs on GitHub come from an
+> earlier run of the same notebook (regularised CNN: test accuracy 0.770, F1 0.773; the same model won on validation in both runs).
+> The data, split, code and model choice are identical.
 
 ## Repository layout
 
