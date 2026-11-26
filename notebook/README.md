@@ -141,7 +141,7 @@ Or interactively: `locust -f locustfile.py --host http://localhost:8000` and ope
 
 (All rows are the aggregated totals of `POST /predict`, `GET /status` and `GET /health`. Raw CSVs are in `results/`.)
 
-![Locust charts](results/locust_screenshot.png.png)
+![Locust charts](results/locust_screenshot.png)
 
 *Locust web UI charts from a separate interactive run (3 API containers, 100 users, 60 s). The small first bump is a 10-user trial
 run; the second is the 100-user run. Its absolute numbers differ a little from the table above, which comes from the scripted run.*
