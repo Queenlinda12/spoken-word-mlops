@@ -156,12 +156,6 @@ containers instead of queueing them in one. Throughput (requests/s) rose only sl
 containers share one laptop's CPU, so the gain is limited by that machine; on separate cloud servers the extra containers would
 add more throughput.
 
-## Demo checklist (video, camera on)
-
-1. Dashboard: up-time, metrics, confusion matrix. 2. **Predict**: upload or record a word.
-3. Visualisations page and interpretation. 4. Upload clips from `new_recordings/` → pending count goes up.
-5. Press **Retrain** → model version increases (2 → 3). 6. Locust flood and the results table.
-
 ## Limitations
 
 Small vocabulary, limited number of voices and microphones, mostly quiet-room recordings. Next steps: more speakers
