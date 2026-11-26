@@ -8,7 +8,7 @@ pipeline can be retrained on another language (for example Kinyarwanda) by repla
 
 | | |
 |---|---|
-| 🎥 **Video demo (YouTube)** | `PASTE YOUR YOUTUBE LINK HERE` (camera on: prediction, upload, retrain, Locust) |
+| 🎥 **Video demo (YouTube)** | `(https://youtu.be/XAbA7DbaA7o)` (camera on: prediction, upload, retrain, Locust) |
 | 🌐 **Run the UI (Docker)** | `docker compose up --build -d`, then open http://localhost:8501 |
 | 🔌 **API + Swagger docs** | http://localhost:8000/docs (after starting with Docker) |
 | 💻 **GitHub repo** | https://github.com/Queenlinda12/spoken-word-mlops |
